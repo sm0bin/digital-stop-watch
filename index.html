@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mobin's Futuristic Stop Watch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+        * {
+            font-family: 'Kelly Slab', cursive;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 h-[100vh] flex items-center justify-center">
+    <main class="mx-5 md:mx-auto w-full md:w-auto">
+        <h1 class="text-5xl mb-5 text-lime-400">Mobin's Futuristic Stop Watch</h1>
+        <section class="py-10 rounded-2xl bg-lime-500/20">
+            <h1 id="clock" class="text-6xl md:text-9xl text-center text-lime-400"><span id="hr-text">00</span>:<span
+                    id="min-text">00</span>:<span id="sec-text">00</span></h1>
+        </section>
+        <section class="grid grid-cols-3 gap-5 my-5">
+            <button id="play-btn"
+                class="py-3 rounded-2xl bg-lime-500/20 hover:bg-lime-500/40 text-2xl text-center text-lime-400">
+                Play
+            </button>
+            <button id="pause-btn"
+                class="py-3 rounded-2xl bg-lime-500/20 hover:bg-lime-500/40 text-2xl text-center text-lime-400 disabled:text-lime-600 disabled:hover:bg-lime-500/20"
+                disabled>
+                Pause
+            </button>
+            <button id="stop-btn"
+                class="py-3 rounded-2xl bg-lime-500/20 hover:bg-lime-500/40 text-2xl text-center text-lime-400 disabled:text-lime-600 disabled:hover:bg-lime-500/20"
+                disabled>
+                Stop
+            </button>
+        </section>
+
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
